@@ -1,0 +1,55 @@
+{
+  "pool_size": 10,
+  "ready": [],
+  "available_jobs": {
+    "8aa920a2-15d2-4307-b244-d07c7917a3ed": {
+      "job_id": "8aa920a2-15d2-4307-b244-d07c7917a3ed",
+      "start_at": "",
+      "max_working_time": 1,
+      "tries": 0,
+      "target": {
+        "job_id": "c5072f74-e1a9-48ae-b98d-da744ffe904f",
+        "start_at": "",
+        "max_working_time": 1,
+        "tries": 0,
+        "target": null,
+        "depends_on": [],
+        "parent_id": null,
+        "filepath": "/Users/space_monkey/Desktop/tmp1.txt",
+        "class_name": "WriteFileJob"
+      },
+      "depends_on": [
+        {
+          "job_id": "b3016672-a139-470c-a67f-c2e0184b8e9e",
+          "start_at": "",
+          "max_working_time": -1,
+          "tries": 0,
+          "target": null,
+          "depends_on": [],
+          "parent_id": "8aa920a2-15d2-4307-b244-d07c7917a3ed",
+          "filepath": "/Users/space_monkey/Desktop/tmp1.txt",
+          "class_name": "CreateFileJob"
+        }
+      ],
+      "parent_id": null,
+      "filepath": "./log.txt",
+      "class_name": "ReadFileJob"
+    },
+    "b3016672-a139-470c-a67f-c2e0184b8e9e": {
+      "job_id": "b3016672-a139-470c-a67f-c2e0184b8e9e",
+      "start_at": "",
+      "max_working_time": -1,
+      "tries": 0,
+      "target": null,
+      "depends_on": [],
+      "parent_id": "8aa920a2-15d2-4307-b244-d07c7917a3ed",
+      "filepath": "/Users/space_monkey/Desktop/tmp1.txt",
+      "class_name": "CreateFileJob"
+    }
+  },
+  "waiting": {
+    "8aa920a2-15d2-4307-b244-d07c7917a3ed": [
+      "b3016672-a139-470c-a67f-c2e0184b8e9e"
+    ]
+  }
+}
